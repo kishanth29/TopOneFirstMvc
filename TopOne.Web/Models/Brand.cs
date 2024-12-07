@@ -5,15 +5,14 @@ namespace TopOne.Web.Models
     public class Brand
     {
         [Key]
-        public Guid id  { get; set; }
+        public Guid id { get; set; }
         [Required]
-        public string? Name { get; set; }
-        // = string.Empty;
+        public string Name { get; set; }
 
+        [Display(Name = "Established Year")]
         public int EstablishedYear { get; set; }
 
-        public string? BrandLogo { get; set; }
-        // 39:000
-
+        [Display(Name = "Brand Logo")]
+        public string BrandLogo { get; set; }
     }
 }

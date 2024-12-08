@@ -5,7 +5,7 @@ namespace TopOne.Web.Models
     public class Brand
     {
         [Key]
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
         [Required]
         public string Name { get; set; }
 
